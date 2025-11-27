@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <title>My Web Page</title>
 </head>
-<body>
-    <!-- Student Info -->
+<body onload="document.body.style.backgroundColor='pink'; welcomeFunction()" onresize="document.body.style.backgroundColor='lightblue'">
+
+    <script>
+        // Алхам 3: "Welcome!" мессеж өгөх функц
+        function welcomeFunction(){
+            alert("Welcome!");
+        }
+
+        // Алхам 4: Input таг дээр товчлуур дарахад арын дэвсгэрийг өөрчлөх функц
+        function keydownFunction(){
+            document.getElementById('myInput').style.backgroundColor = 'yellow';
+        }
+    </script>
+
     <p>
         <em>Name Surname:</em> Enkhzul Altantugs <br>
         <em>Student ID:</em> 150250953
     </p>
 
-    <!-- GitHub Profile with Icon -->
     <a href="https://github.com/enkhzulaltantugs" target="_blank">
         <img src="github_icon.png" alt="GitHub Profile" width="50">
     </a>
 
-    <!-- Courses Section -->
     <h4>Courses that I am taking</h4>
     <ol>
         <li><strong>BBF 101E - Introduction to Information Systems</strong></li>
@@ -26,8 +36,7 @@
         <li>MAT 103E - Mathematics I</li>
     </ol>
 
-    <!-- Bees Section -->
-    <h1><strong>Bees</strong></h1>
+    <h1 onmouseover="style.color='orange'; style.backgroundColor='lightgreen'" onmouseout="style.color='red'; style.backgroundColor=''"><strong>Bees</strong></h1>
 
     <p><strong>The Universe of Bees</strong></p>
     <ul>
@@ -43,13 +52,11 @@
         </li>
     </ul>
 
-    <!-- Bee Image and Link -->
     <p>
         <img src="bees.jpg" alt="Bees Image" width="300"><br>
         <a href="https://en.wikipedia.org/wiki/Bee" target="_blank">Click here for more information</a>
     </p>
 
-    <!-- Bee Families Table -->
     <h3>Bee Families and Genera</h3>
     <table border="1">
         <tr>
@@ -78,7 +85,9 @@
         </tr>
     </table>
 
-    <!-- Preformatted Text -->
+    <h3>Input Element</h3>
+    <input type="text" id="myInput" onkeydown="keydownFunction()" placeholder="Type here to change background color">
+
     <pre>
         Are you a beekeeper?
         
