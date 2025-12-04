@@ -183,3 +183,5 @@ ls -la
 git pull
 git pull
 https://github.com/itu-itis/introduction-to-information-systems-2025-itu-itis25-altantugs.git
+git add .
+git add index.html
